@@ -1,0 +1,80 @@
+LEB@LEB-Profesor MINGW64 ~/Documents/ingenieria_software
+$ git config --global user.email afecreer@gmail.com
+
+LEB@LEB-Profesor MINGW64 ~/Documents/ingenieria_software
+$ git config --global user.name afecreer
+
+LEB@LEB-Profesor MINGW64 ~/Documents/ingenieria_software
+$ git init
+Initialized empty Git repository in C:/Users/LEB-/Documents/ingenieria_software/.git/
+
+LEB@LEB-Profesor MINGW64 ~/Documents/ingenieria_software (master)
+$ git add .
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+LEB@LEB-Profesor MINGW64 ~/Documents/ingenieria_software (master)
+$ git commit -m "primer avance PBI-008"
+[master (root-commit) eb06f4c] primer avance PBI-008
+ 2 files changed, 25 insertions(+)
+ create mode 100644 git.png
+ create mode 100644 index.html
+
+LEB@LEB-Profesor MINGW64 ~/Documents/ingenieria_software (master)
+$ git branch -M main
+
+LEB@LEB-Profesor MINGW64 ~/Documents/ingenieria_software (main)
+$ git remote add origin https://github.com/afecreer/ingenieria_software.git
+
+LEB@LEB-Profesor MINGW64 ~/Documents/ingenieria_software (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 8.55 KiB | 4.28 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/afecreer/ingenieria_software.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+LEB@LEB-Profesor MINGW64 ~/Documents/ingenieria_software (main)
+$ git branch gh-pages
+
+LEB@LEB-Profesor MINGW64 ~/Documents/ingenieria_software (main)
+$ git branch
+  gh-pages
+* main
+
+LEB@LEB-Profesor MINGW64 ~/Documents/ingenieria_software (main)
+$ git branch –M main
+
+LEB@LEB-Profesor MINGW64 ~/Documents/ingenieria_software (main)
+$ git branch
+  gh-pages
+* main
+  –M
+
+LEB@LEB-Profesor MINGW64 ~/Documents/ingenieria_software (main)
+$ git branch gh-pages
+fatal: a branch named 'gh-pages' already exists
+
+LEB@LEB-Profesor MINGW64 ~/Documents/ingenieria_software (main)
+$ git checkout gh-pages
+Switched to branch 'gh-pages'
+
+LEB@LEB-Profesor MINGW64 ~/Documents/ingenieria_software (gh-pages)
+$ git branch
+* gh-pages
+  main
+  –M
+
+LEB@LEB-Profesor MINGW64 ~/Documents/ingenieria_software (gh-pages)
+$ git push origin gh-pages
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'gh-pages' on GitHub by visiting:
+remote:      https://github.com/afecreer/ingenieria_software/pull/new/gh-pages
+remote:
+To https://github.com/afecreer/ingenieria_software.git
+ * [new branch]      gh-pages -> gh-pages
+
